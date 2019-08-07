@@ -1,0 +1,19 @@
+n = int(input())
+
+s = 0
+s1 = 0
+
+for i in range(0, n):
+    
+    arr = input()
+    arr = list(map(int,arr.split()))
+    
+    
+    v = i
+    s = arr[v] + s
+    
+    
+    
+    v1 = n - i - 1
+    s1 = arr[v1] + s1
+    
