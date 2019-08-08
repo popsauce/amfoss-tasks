@@ -1,0 +1,6 @@
+n = input()
+arr = input()
+arr = list(map(int,arr.split()))
+l = max(arr)
+p = arr.count(l)
+print (p)
