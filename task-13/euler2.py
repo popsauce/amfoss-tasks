@@ -1,32 +1,26 @@
-n = int(input())
-n1 = int(n/2)
-a=0
-b=1
-sum = 0
-sums=0
+n=int(input())
+l=[]
 
-while a<=n & b<=n:
-	
-	a = a+b
-	print(a)
-	include= a%2
-	
-	if include == 0:
-		
-		sum = a + sum
-	
-	sums = a + sums
-	if a > n:
-		break
-	b = a+b
-	print(b)
-	include1= b%2
-	
-	if include1 == 0:
-		
-		sum = b + sum
-		
-	sums = b + sums
-
-
-print(sum)
+for i in range(1,n+1):
+    s=0
+    a=1
+    b=1
+    t=2
+    num=int(input())
+    while a<=num and b<=num:
+        t=t+1
+        a=a+b
+        if a>num:
+            break
+        if t%3==0:
+            s=s+a
+        
+        t=t+1
+        b=b+a
+        if b>num:
+            break
+        if t%3==0:
+            s=s+b
+    l.append(s)
+for j in range(0,n):
+    print(l[j])
