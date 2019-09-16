@@ -1,5 +1,6 @@
 #the only way to lessen processing time was to reduce the number of possible combinations
 #ran the following script 5 times to show me the probable 1,6,11,.. and 2,7,12,.. and 3,8,13,.. and 4,9,14,.. and 5,10,15,.. placed characters if x (a-z&&A-Z) was the key
+
 a=raw_input()
 a=a.decode("hex")
 
