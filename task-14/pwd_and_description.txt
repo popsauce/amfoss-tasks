@@ -48,5 +48,3 @@ pwd for lvl10 :truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
 (base64 -d data.txt;; to decode given input from base 64 format)
 
 pwd for lvl11:IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
-
-(decoded given key by shifting index backward or forward by 13 letters ahead (rot13);;)
