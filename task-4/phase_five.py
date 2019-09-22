@@ -9,6 +9,7 @@ import hashlib
 key = ""
 plaintext = ""
 keys=[]
+rkey_list=[]
 
 def get_key():
     global key
@@ -19,7 +20,12 @@ def get_key():
         else:
             key += c
             get_key()
-    
+    for i in rkey_list:
+        if rkey_list[i] == key:
+            key = ""
+            get_key()
+        else:
+            rkey_list.append(key)    
 
 def xor_decrypt(x):
     global key
