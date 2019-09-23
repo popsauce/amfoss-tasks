@@ -8,10 +8,20 @@ uniarr=a.decode("hex")
 n=0
 plaintext=""
 for i in range(70,71) + range(72,73)+ range(74,78)+ range(79,80)+ range(83,84)+ range(102,103)+ range(104,105)+ range(106,110)+ range(111,112)+ range(115,116):
+    if n==1:
+        break
     for j in range(65,66)+ range(70,72)+ range(74,78)+ range(81,82)+ range(84,88)+ range(97,98)+ range(102,104)+ range(106,110)+ range(113,114)+ range(116,120):
+        if n==1:
+            break
         for k in range(68,69)+ range(71,74)+ range(76,79)+ range(82,84)+ range(85,86)+ range(87,90)+ range(100,101)+ range(103,106)+ range(108,110)+ range(114,116)+ range(117,118)+ range(119,122):
+            if n==1:
+                break
             for l in range(65,66)+ range(67, 68)+ range(70,73)+ range(74,77)+ range(80,83)+ range(86,88)+ range(97,98)+ range(99,100)+ range(102,105)+ range(106,109)+ range(112,115)+ range(118,120):
+                if n==1:
+                    break
                 for m in range(70,71)+ range(74,75)+ range(76,79)+ range(80,82)+ range(89,91)+ range(102,103)+ range(106,107)+ range(108,111)+ range(112,114)+ range(121,123):
+                    if n==1:
+                        break
                     a=chr(i)
                     b=chr(j)
                     c=chr(k)
@@ -31,16 +41,7 @@ for i in range(70,71) + range(72,73)+ range(74,78)+ range(79,80)+ range(83,84)+ 
                         ans=flag
                         k=key
                         n=1
-                    if n==1:
-                        break
-                if n==1:
-                    break
-            if n==1:
-                break
-        if n==1:
-            break
-    if n==1:
-        break
+                    
 print "-----------------------------------------------------------------------"
 print ans
 print k
