@@ -6,7 +6,7 @@ from ctypes import CDLL
 a=raw_input()
 uniarr=a.decode("hex")
 n=0
-plaintext=""
+
 for i in range(70,71) + range(72,73)+ range(74,78)+ range(79,80)+ range(83,84)+ range(102,103)+ range(104,105)+ range(106,110)+ range(111,112)+ range(115,116):
     if n==1:
         break
@@ -33,6 +33,7 @@ for i in range(70,71) + range(72,73)+ range(74,78)+ range(79,80)+ range(83,84)+ 
                     print ""
                     hex_key = key.encode("hex")
                     key_list = [hex_key[a]+hex_key[a+1] for a in range(0,len(hex_key),2)]
+                    plaintext=""
                     for n in xrange(len(uniarr)):
                         plaintext += chr(ord(uniarr[n]) ^ int(key_list[i%5], 16))
                     
