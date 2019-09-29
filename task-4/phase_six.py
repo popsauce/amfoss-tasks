@@ -1,13 +1,29 @@
 import hashlib
 from ctypes import CDLL
 
+#The following five lists contain the ciphertext unicode values
+
+# cipone contains unicode values of character at 1,6,11,16... 121 place and has 25 characters.
 cipone=[5, 39, 41, 35, 35, 42, 43, 35, 53, 54, 39, 63, 39, 46, 40, 52, 46, 33, 25, 25, 35, 22, 8, 63, 59]
+# ciptwo contains unicode values of character at 2,7,12,17... 117 place and has 24 characters.
 ciptwo=[24, 3, 2, 36, 4, 27, 7, 19, 36, 3, 25, 7, 4, 22, 16, 18, 18, 12, 31, 53, 57, 50, 48, 40]
+# cipthree contains unicode values of character at 3,8,13...118 place and has 24 characters.
 cipthree=[28, 1, 58, 7, 1, 11, 30, 38, 17, 27, 22, 6, 23, 30, 23, 59, 52, 11, 51, 0, 45, 19, 45, 42]
+# cipfour contains unicode values of character at 4,9,14...119 place and has 24 characters.
 cipfour=[38, 96, 32, 34, 39, 2, 36, 41, 51, 47, 2, 46, 37, 45, 9, 50, 45, 14, 55, 14, 19, 21, 10, 14]
+# cipfive contains unicode values of character at 5,10,15... 120 place and has 24 characters.
 cipfive=[56, 19, 60, 41, 63, 37, 62, 35, 35, 45, 56, 8, 9, 47, 47, 30, 43, 63, 15, 33, 47, 35, 15, 24]
+#All in all there are (25+24+24+24+24) 121 characters in the ciphertext.
+
 br=0
 
+#The following loops iterate through key values (aa-ab-ac-ad-ae) AAAAA to zzzzz and convert ciphertext to plaintext using xor (self-inverse).
+
+#If statements are used to break the xor-ing loop and iterate to the next key value if an unprntable character is generated.
+
+#First if statement (if br==1:) is there to break the loop if answer and key have been generated.
+
+#Second if statement (if x>=33 and x<=126:) is used to break the loop generating the plaintext if a wrong chracter(unprintable or otherwise) is generated
 for aa in range(65,91)+ range(97,123):
     if br==1:
         break
