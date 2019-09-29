@@ -1,2 +1,5 @@
-I tackled this problem by first understanding how xor was working.
-Then tried various methods(phase 3,4,5) to come at a solution.
+# :rainbow:Advanced:fog:Xor:sunrise:
+
+## Understanding Advanced Xor
+
+## Tackling Advanced Xor
