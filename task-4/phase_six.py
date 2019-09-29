@@ -117,6 +117,9 @@ for aa in range(65,91)+ range(97,123):
                                             plaintext+=plaone[a]+platwo[a]+plathree[a]+plafour[a]+plafive[a]
                                         plaintext=plaintext+plaone[24]
                                         flag="{"+plaintext+"}"
+                                        print ""
+                                        print flag
+                                        print ""
                                         if hashlib.md5(flag).digest().encode("hex") == "d444d1ac3799a86d31f34b4a8a3243c6":
                                             print "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
                                             print "Yeah!....You are a genius!"
