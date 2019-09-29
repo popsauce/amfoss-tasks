@@ -1,6 +1,6 @@
 # :rainbow:Advanced:fog::fog::fog:Xor  :sunrise:
 
-> Looks attractive (rainbow) and doable for a hard task.Then the waters get rough (fog).
+> Looks attractive and doable for a hard task.Then the waters get rough.
 
 ## Understanding Advanced Xor
 
