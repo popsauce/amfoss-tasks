@@ -1,4 +1,4 @@
-# :rainbow:Advanced:fog:Xor:sunrise:
+# :rainbow:Advanced:fog::fog::fog:Xor  :sunrise:
 
 ## Understanding Advanced Xor
 
