@@ -3,7 +3,60 @@
 <h1>Get it using javascript.</h1>
 </head>
 <body>
+    <html>
+<head>
+<h1>Get it using javascript.</h1>
+</head>
+<body>
+ <! 
     <form name="myForm" action="/action_page.php" onsubmit="return githubdata()" method="post">
+        Name: <input type="text" name="fname">
+        <input type="submit" value="Submit">
+        </form> 
+   > 
+    <form method= "post" action="">
+        <p><b>Enter Github Username :</b>
+        <input type="text" id="username" size="30" maxlength="50" value="">
+        <p><b>
+        <input type="submit" size="25" value="GO">
+        </form>
+
+<script>
+function githubdata()
+    const fetch = require('node-fetch');
+ 
+    const accessToken = 'a6e5d4ecf779ffdf2d4059fc42f51bce72f41325';
+    const query = `
+        query ($username:String!){
+            user(login:$username){
+            name
+            login
+            bio
+            avatarUrl
+                }
+        
+         }`;
+ 
+    fetch('https://api.github.com/graphql', {
+    method: 'POST',
+    body: JSON.stringify({query}),
+    headers: {
+        'Authorization': `Bearer ${a6e5d4ecf779ffdf2d4059fc42f51bce72f41325}`,
+    },
+    }).then(res => res.text())
+        .then(body => console.log(body)) // {"data":{"repository":{"issues":{"totalCount":247}}}}
+    .catch(error => console.error(error));
+       document.getElementById(username)
+
+</script>
+<!
+for when the username does not exist
+<script>
+  window.alert("Enter a valid github username");
+</script>
+>
+</body>
+</html><form name="myForm" action="/action_page.php" onsubmit="return githubdata()" method="post">
         Name: <input type="text" name="fname">
         <input type="submit" value="Submit">
         </form> 
