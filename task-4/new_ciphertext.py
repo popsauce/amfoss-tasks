@@ -1,3 +1,5 @@
+import hashlib
+from ctypes import CDLL
 """
 print "Enter the ciphertext you want to decrypt."
 a=raw_input()
