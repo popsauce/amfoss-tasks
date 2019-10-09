@@ -1,5 +1,8 @@
+"""
 print "Enter the ciphertext you want to decrypt."
 a=raw_input()
+"""
+a="2a2138440b1c233d080d072b29441c1b2b6d250c052f23070d176e152b3a"
 a=a.decode("hex")
 l=len(a)
 loflist=int(l/5)
